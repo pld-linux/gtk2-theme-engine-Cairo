@@ -25,7 +25,7 @@ Obsoletes:	cairo-gtk-engine
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains Cairo test GTK engine.
+This package contains Cairo test GTK+ engine.
 
 %description -l pl
 Ten pakiet zawiera testowy silnik graficzny Cairo dla GTK+.
