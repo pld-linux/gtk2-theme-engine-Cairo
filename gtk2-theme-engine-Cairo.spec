@@ -4,11 +4,11 @@ Summary:	Cairo graphics engine for GTK+
 Summary(pl):	Silnik graficzny Cairo dla GTK+
 Name:		gtk2-theme-engine-Cairo
 Version:	0.4
-Release:	0.%{cvs_release}.3
+Release:	0.%{cvs_release}.4
 # uhm... whole cairo is on BSD-like, but this package contains only
 # COPYING file with GPL and no other license notes
 License:	GPL (?)
-Group:		Themes/Gtk
+Group:		Themes/GTK+
 Source0:	%{orig_name}-cvs-%{cvs_release}.tar.gz
 Patch0:		%{orig_name}-pixpath.patch
 # Source0-md5:	f2d33ec1b0af8c49ee0d0f2c682e250b
