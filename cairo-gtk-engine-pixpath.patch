@@ -1,0 +1,9 @@
+diff -Nuard cairo-gtk-engine.orig/theme/cairo-industrial/gtkrc cairo-gtk-engine/theme/cairo-industrial/gtkrc
+--- cairo-gtk-engine.orig/theme/cairo-industrial/gtkrc	2003-08-03 01:28:37.000000000 +0200
++++ cairo-gtk-engine/theme/cairo-industrial/gtkrc	2003-09-06 05:11:47.000000000 +0200
+@@ -1,4 +1,4 @@
+-pixmap_path "/home/cosman/garnome/share/themes/Industrial/gtk-2.0"
++pixmap_path "/usr/share/themes/Industrial/gtk-2.0"
+ 
+ style "industrial-default"
+ {
