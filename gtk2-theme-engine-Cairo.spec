@@ -18,7 +18,7 @@ BuildRequires:	automake
 BuildRequires:	cairo-devel >= 0.1.1
 BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	libtool
-BuildRequires:	pkgconfig >= 0.9.0
+BuildRequires:	pkgconfig >= 1:0.9.0
 Requires:	gnome-themes-extras
 Provides:	cairo-gtk-engine
 Obsoletes:	cairo-gtk-engine
