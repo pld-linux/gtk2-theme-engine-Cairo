@@ -4,7 +4,7 @@ Summary:	Cairo graphics engine for GTK+
 Summary(pl):	Silnik graficzny Cairo dla GTK+
 Name:		gtk2-theme-engine-Cairo
 Version:	0.4
-Release:	0.%{cvs_release}.2
+Release:	0.%{cvs_release}.3
 # uhm... whole cairo is on BSD-like, but this package contains only
 # COPYING file with GPL and no other license notes
 License:	GPL (?)
@@ -50,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
-rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.2.*/engines/*.la
+rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/engines/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -58,5 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
-%attr(755,root,root) %{_libdir}/gtk-2.0/2.2.*/engines/*.so
+%attr(755,root,root) %{_libdir}/gtk-2.0/*/engines/*.so
 %{_datadir}/themes/*
