@@ -10,11 +10,14 @@ Group:		Themes/Gtk
 Source0:	%{orig_name}-cvs-%{cvs_release}.tar.gz
 Patch0:		%{orig_name}-pixpath.patch
 # Source0-md5:	f2d33ec1b0af8c49ee0d0f2c682e250b
-BuildRequires:	gtk+2-devel >= 2.2.0
-BuildRequires:	pkgconfig >= 0.9.0
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	cairo-devel >= 0.1.1
-Provides:	cairo-gtk-engine
+BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	libtool
+BuildRequires:	pkgconfig >= 0.9.0
 Requires:	gnome-themes-extras
+Provides:	cairo-gtk-engine
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,20 +31,20 @@ Ten pakiet zawiera testowy silnik graficzny Cairo dla GTK+.
 %patch0 -p1
 
 %build
+%{__libtoolize}
 %{__aclocal}
 %{__autoheader}
 %{__autoconf}
-%{__libtoolize} -f
 ln -s `which libtool` .
-%{__automake} -a
+%{__automake}
 %configure
 %{__make}
-
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 # no *.la for gtk engines
 rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/2.2.*/engines/*.la
