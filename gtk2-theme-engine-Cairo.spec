@@ -16,7 +16,7 @@ URL:		http://gtk-themes.cairographics.org/
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	cairo-devel >= 0.1.1
-BuildRequires:	gtk+2-devel >= 2.2.0
+BuildRequires:	gtk+2-devel >= 2:2.2.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 0.9.0
 Requires:	gnome-themes-extras
