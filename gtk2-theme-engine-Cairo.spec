@@ -1,7 +1,7 @@
 %define		cvs_release	20030906
 %define		orig_name	cairo-gtk-engine
 Summary:	Cairo graphics engine for GTK+
-Summary(pl):	Silnik graficzny Cairo dla GTK+
+Summary(pl.UTF-8):   Silnik graficzny Cairo dla GTK+
 Name:		gtk2-theme-engine-Cairo
 Version:	0.4
 Release:	0.%{cvs_release}.4
@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains Cairo test GTK+ engine.
 
-%description -l pl
+%description -l pl.UTF-8
 Ten pakiet zawiera testowy silnik graficzny Cairo dla GTK+.
 
 %prep
